@@ -29,27 +29,40 @@ main{
     display: flex;
     flex-flow: row wrap;
 }
-section.img,section.texto{
+main>article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+section.texto, section.img{
+    flex: 1 1 400px;
 }
 section.texto{
+    display: flex;
+    flex-flow: column;
     flex: auto;
     width: 50%;
-    min-width: 450px;
+    min-width: 300px;
     text-align: justify;
     padding: 10px;
     justify-content: flex-start;
 }
-section.img{
-    flex: auto;
-    justify-content: flex-end;
-}
-section.img>img{
-    justify-content: flex-end;
-    width: 100%;
-    padding: 50px;
-}
-section.img>iframe{
-    height: 100%;
+main>article>section.img>img{
     padding: 10px;
-
+    width: 100%;
+    flex-direction: ;
+}
+section.img{
+    height: auto;
+}
+section.img>iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: flex;
+  flex: auto;
+}
+main>article#mt{
+    display: flex;
+    flex-flow: row wrap-reverse;
 }
